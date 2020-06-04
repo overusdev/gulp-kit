@@ -1,0 +1,9 @@
+.block {
+  display: flex;
+  flex-direction: column;
+  transform: rotate(6deg);
+
+  &__elem {
+    display: grid;
+  }
+}
