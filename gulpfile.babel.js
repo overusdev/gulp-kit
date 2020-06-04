@@ -1,14 +1,13 @@
-// const { src, dest } = require('gulp');
-const gulp = require('gulp');
+import gulp from 'gulp';
+import babel from 'gulp-babel';
+import uglify from 'gulp-uglify';
+import rename from 'gulp-rename';
 const folders = {
     src: 'src/',
     dist: 'dist/',
     vendor: 'vendor/'
 };
 const { src, dist, vendor } = folders;
-const babel = require('gulp-babel');
-const uglify = require('gulp-uglify');
-const rename = require('gulp-rename');
 
 gulp.task('js', () => {
     return gulp.src([`${src}**/*.js`, `!${vendor}*.js`])
