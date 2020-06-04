@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/overusdev/qulp-builder#readme",
   "devDependencies": {
+    "@babel/register": "^7.10.1",
     "gulp": "^4.0.2"
   }
 }
